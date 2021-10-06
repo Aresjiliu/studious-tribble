@@ -38,7 +38,7 @@ public class Main1 {
                 }else if(Character.isDigit(input[i])){
                     token.append(input[i]);
                     i++;
-                    while(Character.isDigit(input[i])){
+                    while(i<input.length&&Character.isDigit(input[i])){
                         token.append(input[i]);
                         i++;
                     }
